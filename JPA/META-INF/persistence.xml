@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="INF5180">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>magasin.ArticleEntity</class>
+        <class>magasin.CategorieEntity</class>
+        <class>magasin.ClientEntity</class>
+        <class>magasin.CommandeEntity</class>
+        <class>magasin.DetaillivraisonEntity</class>
+        <class>magasin.LignecommandeEntity</class>
+        <class>magasin.LivraisonEntity</class>
+        <properties>
+            <property name="eclipselink.jdbc.url" value="jdbc:oracle:thin:@//localhost:1521"/>
+            <property name="eclipselink.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="eclipselink.jdbc.user" value="guillaume"/>
+            <property name="eclipselink.jdbc.password" value="inf5180"/>
+        </properties>
+    </persistence-unit>
+</persistence>
